@@ -9,6 +9,7 @@
     <sprite>sprites\s_player</sprite>
     <sprite>sprites\s_collision</sprite>
     <sprite>sprites\s_mask</sprite>
+    <sprite>sprites\s_npc</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,6 +19,7 @@
     </scripts>
     <scripts name="Physics">
       <script>scripts\m_move.gml</script>
+      <script>scripts\m_talk.gml</script>
     </scripts>
   </scripts>
   <objects name="objects">
@@ -30,6 +32,7 @@
     </objects>
     <objects name="Characters">
       <object>objects\o_player</object>
+      <object>objects\o_npc</object>
     </objects>
   </objects>
   <rooms name="rooms">

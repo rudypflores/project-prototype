@@ -1,10 +1,11 @@
 ///m_move();
+
 var right = keyboard_check(vk_right);
 var up = keyboard_check(vk_up);
 var left = keyboard_check(vk_left);
 var down = keyboard_check(vk_down);
-var spd = 3;
 
+var spd = 3;
 var hspd = right - left;
 var vspd = down - up;
 
