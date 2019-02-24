@@ -13,14 +13,24 @@
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\m_move.gml</script>
-    <script>scripts\state_follow_player.gml</script>
+    <scripts name="States">
+      <script>scripts\state_follow_player.gml</script>
+    </scripts>
+    <scripts name="Physics">
+      <script>scripts\m_move.gml</script>
+    </scripts>
   </scripts>
   <objects name="objects">
-    <object>objects\o_player</object>
-    <object>objects\o_collision</object>
-    <object>objects\o_camera_parent</object>
-    <object>objects\o_camera</object>
+    <objects name="Physics">
+      <object>objects\o_collision</object>
+    </objects>
+    <objects name="Helper">
+      <object>objects\o_camera</object>
+      <object>objects\o_camera_parent</object>
+    </objects>
+    <objects name="Characters">
+      <object>objects\o_player</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\debug_room</room>
