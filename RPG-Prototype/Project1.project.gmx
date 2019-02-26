@@ -10,6 +10,7 @@
     <sprite>sprites\s_collision</sprite>
     <sprite>sprites\s_mask</sprite>
     <sprite>sprites\s_npc</sprite>
+    <sprite>sprites\s_elder</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -19,6 +20,7 @@
     </scripts>
     <scripts name="Physics">
       <script>scripts\m_move.gml</script>
+      <script>scripts\m_idle.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -27,6 +29,7 @@
   <objects name="objects">
     <objects name="Physics">
       <object>objects\o_collision</object>
+      <object>objects\o_npc_parent</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>
@@ -34,7 +37,7 @@
     </objects>
     <objects name="Characters">
       <object>objects\o_player</object>
-      <object>objects\o_npc</object>
+      <object>objects\o_npc_elder</object>
     </objects>
   </objects>
   <rooms name="rooms">

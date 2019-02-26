@@ -6,9 +6,9 @@ left = keyboard_check(vk_left);
 down = keyboard_check(vk_down);
 interact = keyboard_check_pressed(ord('Z'));
 
-var spd = 3;
-var hspd = right - left;
-var vspd = down - up;
+spd = 3;
+hspd = right - left;
+vspd = down - up;
 
 //Check for x collision
 if(place_meeting(x + (hspd * spd), y, o_collision)) {

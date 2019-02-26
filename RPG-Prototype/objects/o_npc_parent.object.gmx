@@ -26,11 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>///Properties of the npc
+//a dialogue array must be defined in the created event of the child instance!
 index = 0;
-
-dialogue[0] = "Hello";
-dialogue[1] = "This is a test for the dialogue system of the game!"; 
-dialogue[2] = "Thanks for testing!";
 </string>
           </argument>
         </arguments>
@@ -55,16 +52,20 @@ dialogue[2] = "Thanks for testing!";
             <kind>1</kind>
             <string>///Draw the GUI for the dialogue
 
-draw_set_colour(c_black);
+draw_set_colour(c_white);
 draw_set_font(f_lato);
+draw_set_halign(fa_left);
+if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))
+draw_text(view_wport[0]/10, view_hport[0]-100, dialogue[index]);
 
-draw_text(view_wport[0]/2, view_hport[0]-100, dialogue[index]);
-
-if(o_player.interact) {
-    show_debug_message(array_length_1d(dialogue));
-    if(index &gt; array_length_1d(dialogue)-1) {
+//Check if player is close to npc
+if(o_player.interact &amp;&amp; (place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))) {
+    //If so we display text, and we switch to the next index for each key press
+    if(index == array_length_1d(dialogue)-1) {
         index = 0;
+        o_player.state = m_move;
     } else {
+        o_player.state = m_idle;
         index++;
     }
 }
