@@ -1,9 +1,10 @@
 ///m_move();
 
-var right = keyboard_check(vk_right);
-var up = keyboard_check(vk_up);
-var left = keyboard_check(vk_left);
-var down = keyboard_check(vk_down);
+right = keyboard_check(vk_right);
+up = keyboard_check(vk_up);
+left = keyboard_check(vk_left);
+down = keyboard_check(vk_down);
+interact = keyboard_check_pressed(ord('Z'));
 
 var spd = 3;
 var hspd = right - left;

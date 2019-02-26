@@ -19,9 +19,11 @@
     </scripts>
     <scripts name="Physics">
       <script>scripts\m_move.gml</script>
-      <script>scripts\m_talk.gml</script>
     </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\f_lato</font>
+  </fonts>
   <objects name="objects">
     <objects name="Physics">
       <object>objects\o_collision</object>

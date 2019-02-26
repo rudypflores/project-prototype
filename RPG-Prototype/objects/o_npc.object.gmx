@@ -26,13 +26,17 @@
           <argument>
             <kind>1</kind>
             <string>///Properties of the npc
+index = 0;
 
+dialogue[0] = "Hello";
+dialogue[1] = "This is a test for the dialogue system of the game!"; 
+dialogue[2] = "Thanks for testing!";
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="64">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -49,8 +53,21 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Check for interaction with player
-m_talk();
+            <string>///Draw the GUI for the dialogue
+
+draw_set_colour(c_black);
+draw_set_font(f_lato);
+
+draw_text(view_wport[0]/2, view_hport[0]-100, dialogue[index]);
+
+if(o_player.interact) {
+    show_debug_message(array_length_1d(dialogue));
+    if(index &gt; array_length_1d(dialogue)-1) {
+        index = 0;
+    } else {
+        index++;
+    }
+}
 </string>
           </argument>
         </arguments>
