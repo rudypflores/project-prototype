@@ -57,6 +57,7 @@
     <instance objName="o_collision" x="512" y="16" name="inst_4DFD8FAD" locked="0" code="" scaleX="31.75" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="512" y="752" name="inst_3FF8FF27" locked="0" code="" scaleX="31.1599998474121" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_npc_elder" x="352" y="240" name="inst_6129AB91" locked="0" code="" scaleX="0.5" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="o_test" x="272" y="336" name="inst_83FD2920" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

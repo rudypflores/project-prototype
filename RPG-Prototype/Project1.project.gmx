@@ -38,6 +38,7 @@
     <objects name="Characters">
       <object>objects\o_player</object>
       <object>objects\o_npc_elder</object>
+      <object>objects\o_test</object>
     </objects>
   </objects>
   <rooms name="rooms">
