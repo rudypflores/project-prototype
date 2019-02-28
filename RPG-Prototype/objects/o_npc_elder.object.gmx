@@ -28,10 +28,13 @@
             <string>///Properties
 event_inherited();
 
+image_speed = .1;
+
 //Dialogue
 name = "Elder";
 dialogue[1] = "Hello good morning!";
 dialogue[2] = "This is a test!";
+dialogue[3] = "The next piece of text";
 </string>
           </argument>
         </arguments>
