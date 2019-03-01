@@ -8,7 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\s_collision</sprite>
     <sprite>sprites\s_mask</sprite>
-    <sprite>sprites\s_npc</sprite>
+    <sprite>sprites\s_interactive</sprite>
     <sprite>sprites\s_elder</sprite>
     <sprites name="player">
       <sprite>sprites\s_player_up</sprite>
@@ -16,16 +16,23 @@
       <sprite>sprites\s_player_right</sprite>
       <sprite>sprites\s_player_left</sprite>
     </sprites>
+    <sprite>sprites\s_enemy</sprite>
+    <sprite>sprites\s_generic</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="States">
       <script>scripts\state_follow_player.gml</script>
+      <script>scripts\state_battle.gml</script>
     </scripts>
     <scripts name="Physics">
       <script>scripts\m_move.gml</script>
       <script>scripts\m_idle.gml</script>
+      <script>scripts\m_battle.gml</script>
+    </scripts>
+    <scripts name="Helper">
+      <script>scripts\m_isColliding.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
@@ -35,19 +42,26 @@
     <objects name="Physics">
       <object>objects\o_collision</object>
       <object>objects\o_npc_parent</object>
+      <object>objects\o_enemy_parent</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>
       <object>objects\o_camera_parent</object>
+      <object>objects\o_start_position</object>
+      <object>objects\o_camera_battle</object>
     </objects>
     <objects name="Characters">
       <object>objects\o_player</object>
       <object>objects\o_npc_elder</object>
       <object>objects\o_test</object>
     </objects>
+    <objects name="Enemies">
+      <object>objects\o_enemy_shark</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\debug_room</room>
+    <room>rooms\r_debugHub</room>
+    <room>rooms\r_debugBattle</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

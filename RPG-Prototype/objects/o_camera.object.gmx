@@ -35,8 +35,8 @@ state = state_follow_player;
 target[? "x"] = x;
 target[? "y"] = y;
 
-view_xview[0] = x-view_wview[0]/2;
-view_yview[0] = y-view_hview[0]/2;
+view_xview[0] = x-view_wview[0];
+view_yview[0] = y-view_hview[0];
 
 </string>
           </argument>
@@ -62,30 +62,6 @@ view_yview[0] = y-view_hview[0]/2;
             <kind>1</kind>
             <string>//Run the current state
 script_execute(state);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="5">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Destroy the view
-instance_destroy();
 </string>
           </argument>
         </arguments>
