@@ -1,5 +1,4 @@
 ///m_move();
-
 right = keyboard_check(vk_right);
 up = keyboard_check(vk_up);
 left = keyboard_check(vk_left);
