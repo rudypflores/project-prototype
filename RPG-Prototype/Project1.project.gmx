@@ -18,6 +18,7 @@
     </sprites>
     <sprite>sprites\s_enemy</sprite>
     <sprite>sprites\s_generic</sprite>
+    <sprite>sprites\s_dialogueBox</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

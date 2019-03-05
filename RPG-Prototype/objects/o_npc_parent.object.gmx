@@ -85,8 +85,9 @@ draw_set_halign(fa_left);
 //Prevent player from moving while in dialogue
 if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player)) {
     if(o_player.state == m_idle) {
-        draw_text_transformed(view_wport[0]/10, view_hport[0]-150, name, 0.5, 0.5, 0);
-        draw_text_transformed(view_wport[0]/10, view_hport[0]-125, dialogue[index], 0.8, 0.8, 0);   
+        draw_sprite_ext(s_dialogueBox, 0, view_wport[0]/10-170, view_hport[0]-380, 14, 10, 0, c_white, 0.9);
+        draw_text_transformed(view_wport[0]/10-110, view_hport[0]-330, name, 0.6, 0.6, 0);
+        draw_text_transformed(view_wport[0]/10-110, view_hport[0]-290, dialogue[index], 0.9, 0.9, 0);   
     }
 }
 
