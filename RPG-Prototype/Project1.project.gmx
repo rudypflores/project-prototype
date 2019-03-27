@@ -57,6 +57,7 @@
       <object>objects\o_player</object>
       <object>objects\o_npc_elder</object>
       <object>objects\o_test</object>
+      <object>objects\o_npc_1</object>
     </objects>
     <objects name="Enemies">
       <object>objects\o_enemy_shark</object>

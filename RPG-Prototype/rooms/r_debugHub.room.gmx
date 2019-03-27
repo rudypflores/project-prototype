@@ -59,6 +59,7 @@
     <instance objName="o_npc_elder" x="496" y="240" name="inst_8A954F08" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
     <instance objName="o_start_position" x="464" y="304" name="inst_E354A1D0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_enemy_shark" x="416" y="240" name="inst_53BFA2F8" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_npc_1" x="336" y="240" name="inst_C418B2CB" locked="0" code="" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
