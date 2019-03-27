@@ -35,6 +35,7 @@ name = "Black Smith";
 dialogue[1] = "Hello good morning!";
 dialogue[2] = "Fine day for beta testing";
 dialogue[3] = "Look out for them sneaky bugs!";
+dialogue[4] = "this is the end of the dialogue";
 </string>
           </argument>
         </arguments>
