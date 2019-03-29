@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Properties
 event_inherited();
+image_speed = .13;
 
 //Dialogue
 name = "Shark";
