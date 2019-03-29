@@ -65,9 +65,6 @@
     <objects name="Enemies">
       <object>objects\o_enemy_shark</object>
     </objects>
-    <objects name="UI">
-      <object>objects\o_battlePointer</object>
-    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_debugHub</room>

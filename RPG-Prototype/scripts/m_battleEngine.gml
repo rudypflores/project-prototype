@@ -24,22 +24,31 @@ if(o_player.interact) {
         o_player.state = m_move;
     }
 }
-
+//If right is pressed
 if(o_player.menu_right) {
     
+    //Go to next option
     current++;
-      
+    
+    //Handle overflow exception
     if(current == array_length_1d(battleOptionPositionsX))
         current = 0;
-    
-    xx = battleOptionPositionsX[current]+60;
 }
-
+//If left is pressed
 if(o_player.menu_left) {
     current--;
         
     if(current < 0)
-        current = array_length_1d(battleOptionPositionsX)-1;
-    
+        current = array_length_1d(battleOptionPositionsX)-1;  
+}
+//Place the pointer based on the current index
+//Offset pointer to center of selection
+if(current == SPECIALS) {
+    xx = battleOptionPositionsX[current]+75;
+} else if(current == ITEMS) {
+    xx = battleOptionPositionsX[current]+55;
+} else if(current == RUN) {
+    xx = battleOptionPositionsX[current]+40;
+} else {
     xx = battleOptionPositionsX[current]+60;
 }

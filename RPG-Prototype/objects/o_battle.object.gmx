@@ -26,7 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>///Properties
-
 //Battle Options
 battleOptions[0] = "Attack";
 battleOptions[1] = "Guard";
@@ -52,7 +51,8 @@ yy = battleOptionPositionsY[0]-25;
 //Current selection
 current = defaultOption;
 
-
+//speed 
+imgSpeed = 0;
 </string>
           </argument>
         </arguments>
@@ -111,7 +111,8 @@ draw_text(battleOptionPositionsX[3], battleOptionPositionsY[0], battleOptions[3]
 draw_text(battleOptionPositionsX[4], battleOptionPositionsY[0], battleOptions[4]);
 
 //Draw Pointer
-draw_sprite_ext(s_battleOptionPointer, image_index, xx, yy, 0.5, 0.5, 0, c_white, 1);
+draw_sprite_ext(s_battleOptionPointer, -1, xx, yy, 3, 3, 0, c_white, 1);
+image_speed = .1;
 </string>
           </argument>
         </arguments>
