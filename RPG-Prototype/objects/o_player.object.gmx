@@ -35,6 +35,11 @@ last_room = room;
 hp = 200;
 atk = 5;
 def = 5;
+
+//controls
+interact = undefined;
+menu_right = undefined;
+menu_left = undefined;
 </string>
           </argument>
         </arguments>

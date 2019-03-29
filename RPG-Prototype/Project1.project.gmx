@@ -36,6 +36,9 @@
     <scripts name="Helper">
       <script>scripts\m_isColliding.gml</script>
     </scripts>
+    <scripts name="Engines">
+      <script>scripts\m_battleEngine.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_lato</font>

@@ -81,6 +81,9 @@ if(room == r_debugBattle) {
             <kind>1</kind>
             <string>//Go to next room and make character face enemy
 if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !talking) {
+    //update the last room
+    o_player.last_room = room;
+    
     room_goto(r_debugBattle);
     o_player.sprite_index = s_player_up;
     o_player.state = m_battle;
@@ -108,6 +111,7 @@ if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !talking) {
           <argument>
             <kind>1</kind>
             <string>///Draw the GUI for the dialogue
+display_set_gui_size(display_get_width(), display_get_height());
 draw_set_colour(c_white);
 draw_set_font(f_lato);
 draw_set_halign(fa_left);
@@ -115,9 +119,10 @@ draw_set_halign(fa_left);
 //Prevent player from moving while in dialogue
 if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player)) {
     if(o_player.state == m_idle) {
-        draw_sprite_ext(s_dialogueBox, 0, view_wport[0]/10-170, view_hport[0]-380, 14, 10, 0, c_white, 0.9);
-        draw_text_transformed(view_wport[0]/10-110, view_hport[0]-330, name, 0.9, 0.9, 0);
-        draw_text_transformed(view_wport[0]/10-110, view_hport[0]-290, dialogue[index], 0.6, 0.6, 0);   
+        //If we're in the idle state the dialogue box is drawn
+        draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_white, 0.9);
+        draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
+        draw_text_transformed(120, view_hport[0]+125, dialogue[index], 0.6, 0.6, 0);   
     }
 }
 
