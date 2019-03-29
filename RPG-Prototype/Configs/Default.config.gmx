@@ -204,14 +204,14 @@
     <option_androidtv_use_test_ads>false</option_androidtv_use_test_ads>
     <option_argumenterrors>True</option_argumenterrors>
     <option_audioGroupCount>1</option_audioGroupCount>
-    <option_author>Rudy L. Pichola-Flores</option_author>
+    <option_author>Rudy L. Flores</option_author>
     <option_backimage>nil</option_backimage>
     <option_borderless>False</option_borderless>
     <option_changed>false</option_changed>
     <option_changeresolution>false</option_changeresolution>
     <option_closeesc>true</option_closeesc>
     <option_colordepth>0</option_colordepth>
-    <option_display_name>Game Project</option_display_name>
+    <option_display_name>RPG_Prototype</option_display_name>
     <option_displayerrors>True</option_displayerrors>
     <option_ecma>0</option_ecma>
     <option_facebook_app_display_name></option_facebook_app_display_name>
@@ -449,7 +449,7 @@
     <option_screenkey>True</option_screenkey>
     <option_screenshotkey>true</option_screenshotkey>
     <option_shortcircuit>True</option_shortcircuit>
-    <option_showcursor>True</option_showcursor>
+    <option_showcursor>False</option_showcursor>
     <option_showprogress>1</option_showprogress>
     <option_sizeable>False</option_sizeable>
     <option_stayontop>false</option_stayontop>
@@ -496,9 +496,9 @@
     <option_use_fast_collision>False</option_use_fast_collision>
     <option_use_new_audio>True</option_use_new_audio>
     <option_variableerrors>False</option_variableerrors>
-    <option_version>100</option_version>
+    <option_version>1.0</option_version>
     <option_version_build>0</option_version_build>
-    <option_version_company></option_version_company>
+    <option_version_company>OverStack Studios</option_version_company>
     <option_version_copyright></option_version_copyright>
     <option_version_description></option_version_description>
     <option_version_major>1</option_version_major>
@@ -578,7 +578,7 @@
     <option_windowcolor>clBlack</option_windowcolor>
     <option_windows_alternate_sync_method>False</option_windows_alternate_sync_method>
     <option_windows_build_version>0</option_windows_build_version>
-    <option_windows_company_info></option_windows_company_info>
+    <option_windows_company_info>OverStack Studios</option_windows_company_info>
     <option_windows_copyright_info></option_windows_copyright_info>
     <option_windows_create_textures_on_demand>False</option_windows_create_textures_on_demand>
     <option_windows_description_info></option_windows_description_info>

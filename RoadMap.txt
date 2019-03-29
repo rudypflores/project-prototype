@@ -1,0 +1,35 @@
+##Roadmap for prototype##
+
+**Stage 1**
+Main Engine:
+
+  - Dialogue engine
+  - Battle engine
+  - Backpack engine
+  - Physics engine (collisions, gravity, 2.5D)
+  - Economy engine
+  - Camera engine
+  - Partner/Team system
+
+**Stage 2**
+Assets:
+
+  - Sprites 32x32 based scale for objects
+  - Sprites 16x16 based scale for UI
+  - Music/FX
+  - Tilesets
+  - Icons
+
+**Stage 3**
+Writing:
+  - Storyline
+  - characters
+  - world building
+  - polishing
+
+**Stage 4**
+Test Driven Development and Release:
+  - Beta Testing
+  - Debugging
+  - Alpha Release
+  - Main release of 1.0 version
