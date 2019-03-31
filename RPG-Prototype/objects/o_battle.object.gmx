@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>///Properties
+
+//activate sprite
+attackActive = 0;
+
 //Battle Options
 battleOptions[0] = "Attack";
 battleOptions[1] = "Guard";
@@ -110,14 +114,14 @@ if(!instance_exists(o_hpBar_player) &amp;&amp; instance_exists(o_player)) {
 display_set_gui_size(display_get_width(), display_get_height());
 
 //Draw battle options
-draw_text(battleOptionPositionsX[0], battleOptionPositionsY[0], battleOptions[0]);
+draw_sprite_ext(s_gui_battle_attack, attackActive, battleOptionPositionsX[0], battleOptionPositionsY[0], 4, 4, 0, c_white, 1);
 draw_text(battleOptionPositionsX[1], battleOptionPositionsY[0], battleOptions[1]);
 draw_text(battleOptionPositionsX[2], battleOptionPositionsY[0], battleOptions[2]);
 draw_text(battleOptionPositionsX[3], battleOptionPositionsY[0], battleOptions[3]);
 draw_text(battleOptionPositionsX[4], battleOptionPositionsY[0], battleOptions[4]);
 
 //Draw Pointer
-draw_sprite_ext(s_battleOptionPointer, -1, xx, yy, 3, 3, 0, c_white, 1);
+draw_sprite_ext(s_battleOptionPointer, -1, xx, yy-20, 3, 3, 0, c_white, 1);
 image_speed = .1;
 </string>
           </argument>

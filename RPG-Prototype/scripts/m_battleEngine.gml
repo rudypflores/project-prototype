@@ -48,7 +48,12 @@ if(o_player.menu_left) {
 }
 //Place the pointer based on the current index
 //Offset pointer to center of selection
-if(current == SPECIALS) {
+attackActive = 0;
+if(current == ATTACK) {
+    xx = battleOptionPositionsX[current]-5;
+    o_battle.attackActive = image_index;
+    image_speed = .2;
+} else if(current == SPECIALS) {
     xx = battleOptionPositionsX[current]+75;
 } else if(current == ITEMS) {
     xx = battleOptionPositionsX[current]+55;

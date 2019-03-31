@@ -21,6 +21,7 @@
     <sprite>sprites\s_dialogueBox</sprite>
     <sprite>sprites\s_battleOptionPointer</sprite>
     <sprite>sprites\s_hpBar</sprite>
+    <sprite>sprites\s_gui_battle_attack</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
