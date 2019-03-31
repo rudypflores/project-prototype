@@ -4,5 +4,5 @@ o_player.speed = 0;
 interact = keyboard_check_pressed(ord('Z'));
 
 //Move around the menu
-menu_right = keyboard_check_pressed(vk_right);
-menu_left = keyboard_check_pressed(vk_left);
+menu_up = keyboard_check_pressed(vk_up);
+menu_down = keyboard_check_pressed(vk_down);
