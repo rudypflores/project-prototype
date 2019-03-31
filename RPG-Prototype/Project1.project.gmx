@@ -20,6 +20,7 @@
     <sprite>sprites\s_generic</sprite>
     <sprite>sprites\s_dialogueBox</sprite>
     <sprite>sprites\s_battleOptionPointer</sprite>
+    <sprite>sprites\s_hpBar</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,6 +28,7 @@
     <scripts name="States">
       <script>scripts\state_follow_player.gml</script>
       <script>scripts\state_battle.gml</script>
+      <script>scripts\state_damaged.gml</script>
     </scripts>
     <scripts name="Physics">
       <script>scripts\m_move.gml</script>
@@ -49,6 +51,7 @@
       <object>objects\o_npc_parent</object>
       <object>objects\o_enemy_parent</object>
       <object>objects\o_battle</object>
+      <object>objects\o_hpBar_parent</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>
@@ -64,6 +67,10 @@
     </objects>
     <objects name="Enemies">
       <object>objects\o_enemy_shark</object>
+    </objects>
+    <objects name="UI">
+      <object>objects\o_hpBar_player</object>
+      <object>objects\o_hpBar_enemy</object>
     </objects>
   </objects>
   <rooms name="rooms">

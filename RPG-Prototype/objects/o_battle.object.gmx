@@ -41,7 +41,7 @@ battleOptionPositionsX[3] = view_wport[0]/5+750;
 battleOptionPositionsX[4] = view_wport[0]/5+1000;
 
 //Position of each option at Y
-battleOptionPositionsY[0] = view_hport[0]-180;
+battleOptionPositionsY[0] = 90;
 
 //Default Option
 defaultOption = 0;
@@ -77,6 +77,12 @@ imgSpeed = 0;
             <kind>1</kind>
             <string>///Main battle system
 m_battleEngine();
+
+///Create UI
+if(!instance_exists(o_hpBar_player) &amp;&amp; instance_exists(o_player)) {
+    instance_create(0, 0, o_hpBar_player);
+}
+
 </string>
           </argument>
         </arguments>

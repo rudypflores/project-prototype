@@ -4,10 +4,14 @@ if(o_player.interact) {
     //Attack the enemy
     if(current == ATTACK) {
         show_debug_message("Attack pressed");
+        o_hpBar_enemy.state = state_damaged;
+        o_hpBar_enemy.in = irandom(50);
     } 
     //Guard from enemy attack
     else if(current == GUARD) {
         show_debug_message("Guard pressed");
+        o_hpBar_player.state = state_damaged;
+        o_hpBar_player.in = irandom(100);
     } 
     //Use special attack against enemy
     else if(current == SPECIALS) {
@@ -24,6 +28,7 @@ if(o_player.interact) {
         o_player.state = m_move;
     }
 }
+
 //If right is pressed
 if(o_player.menu_right) {
     
