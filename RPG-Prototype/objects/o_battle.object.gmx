@@ -101,6 +101,14 @@ if(!instance_exists(o_battle_specials)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[2], o_battle_specials);
 }
 
+if(!instance_exists(o_battle_items)) {
+    instance_create(battleOptionPositionX, battleOptionPositionsY[3], o_battle_items);
+}
+
+if(!instance_exists(o_battle_run)) {
+    instance_create(battleOptionPositionX, battleOptionPositionsY[4], o_battle_run);
+}
+
 //Check for section to reset
 if(o_player.menu_down || o_player.menu_up) {
     if(current != ATTACK) {
@@ -111,6 +119,12 @@ if(o_player.menu_down || o_player.menu_up) {
     }
     if(current != SPECIALS) {
         o_battle_specials.image_index = 0;
+    }
+    if(current != ITEMS) {
+        o_battle_items.image_index = 0;
+    }
+    if(current != RUN) {
+        o_battle_run.image_index = 0;
     }
 }
 

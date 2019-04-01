@@ -21,10 +21,12 @@ if(o_player.interact) {
     }
     //Use an item
     else if(current == ITEMS) {
+        o_battle_items.image_speed = .8;
         show_debug_message("Items pressed");
     } 
     //Run from battle
     else if(current == RUN) {
+        o_battle_run.image_speed = .8;
         show_debug_message("Run for your life!");
         room_goto(o_player.last_room);
         o_player.state = m_move;
