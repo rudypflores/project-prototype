@@ -55,6 +55,22 @@ talking = true;
           <argument>
             <kind>1</kind>
             <string>depth = -y;
+
+//Check if player is close to npc
+if(o_player.interact &amp;&amp; (place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))) {
+    //If so we display text, and we switch to the next index for each key press
+    //Check if variable instantiated in child
+    if(!(is_undefined(dialogue))) {
+        if(index == array_length_1d(dialogue)-1) {
+            index = 0;
+            o_player.state = m_move;
+            talking = true;
+        } else {
+            o_player.state = m_idle;
+            index++;
+        }
+    }
+}
 </string>
           </argument>
         </arguments>
@@ -89,22 +105,6 @@ if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_m
         draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
         draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
         draw_text_transformed(120, view_hport[0]+125, dialogue[index], 0.6, 0.6, 0);   
-    }
-}
-
-//Check if player is close to npc
-if(o_player.interact &amp;&amp; (place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))) {
-    //If so we display text, and we switch to the next index for each key press
-    //Check if variable instantiated in child
-    if(!(is_undefined(dialogue))) {
-        if(index == array_length_1d(dialogue)-1) {
-            index = 0;
-            o_player.state = m_move;
-            talking = true;
-        } else {
-            o_player.state = m_idle;
-            index++;
-        }
     }
 }
 </string>

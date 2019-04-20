@@ -27,7 +27,11 @@
     <sprite>sprites\s_gui_battle_items</sprite>
     <sprite>sprites\s_gui_battle_run</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\t_house_wall</background>
+    <background>background\t_house_floor</background>
+    <background>background\t_house_props</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="States">
@@ -46,6 +50,7 @@
     <scripts name="Engines">
       <script>scripts\m_battleEngine.gml</script>
     </scripts>
+    <script>scripts\set_tile_depth.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_lato</font>
@@ -57,6 +62,8 @@
       <object>objects\o_enemy_parent</object>
       <object>objects\o_battle</object>
       <object>objects\o_hpBar_parent</object>
+      <object>objects\o_interactive</object>
+      <object>objects\o_game</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>
@@ -85,6 +92,7 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\r_house_dyru</room>
     <room>rooms\r_debugHub</room>
     <room>rooms\r_debugBattle</room>
   </rooms>

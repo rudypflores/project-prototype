@@ -686,12 +686,14 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="5">
+    <constants number="7">
       <constant name="ATTACK">0</constant>
       <constant name="GUARD">1</constant>
       <constant name="SPECIALS">2</constant>
       <constant name="ITEMS">3</constant>
       <constant name="RUN">4</constant>
+      <constant name="BED_BOTTOM">10000</constant>
+      <constant name="BED_TOP">100000</constant>
     </constants>
   </ConfigConstants>
 </Config>

@@ -100,24 +100,7 @@ if(down) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Move based on room change
-if(instance_exists(o_start_position)) {
-    with(o_start_position) {
-        other.x = x;
-        other.y = y;
-    }
-}
-
-//Creation of the view
-if(!instance_exists(o_camera)) {
-    if(room == r_debugHub)
-        instance_create(x+25, y+25, o_camera);
-    else if(room == r_debugBattle) {
-        instance_create(x+100, y, o_camera);
-        o_camera.state = state_battle;
-    }
-}
-</string>
+            <string></string>
           </argument>
         </arguments>
       </action>
