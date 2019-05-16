@@ -15,14 +15,19 @@
       <sprite>sprites\s_player_left</sprite>
     </sprites>
     <sprites name="GUI">
-      <sprite>sprites\s_hpBar</sprite>
-      <sprite>sprites\s_dialogueBox</sprite>
-      <sprite>sprites\s_battleOptionPointer</sprite>
-      <sprite>sprites\s_gui_battle_items</sprite>
-      <sprite>sprites\s_gui_battle_specials</sprite>
-      <sprite>sprites\s_gui_battle_attack</sprite>
-      <sprite>sprites\s_gui_battle_guard</sprite>
-      <sprite>sprites\s_gui_battle_run</sprite>
+      <sprites name="battle">
+        <sprite>sprites\s_gui_battle_guard</sprite>
+        <sprite>sprites\s_battleOptionPointer</sprite>
+        <sprite>sprites\s_gui_battle_items</sprite>
+        <sprite>sprites\s_gui_battle_specials</sprite>
+        <sprite>sprites\s_gui_battle_attack</sprite>
+        <sprite>sprites\s_gui_battle_run</sprite>
+        <sprite>sprites\s_hpBar</sprite>
+      </sprites>
+      <sprites name="overworld">
+        <sprite>sprites\s_dialogueBox</sprite>
+        <sprite>sprites\s_dialoguePointer</sprite>
+      </sprites>
     </sprites>
     <sprites name="Title_Screen">
       <sprite>sprites\s_title</sprite>
@@ -101,6 +106,7 @@
       <object>objects\o_battle_specials</object>
       <object>objects\o_battle_items</object>
       <object>objects\o_battle_run</object>
+      <object>objects\o_dialoguePointer</object>
     </objects>
     <objects name="TitleScreen">
       <object>objects\o_title</object>

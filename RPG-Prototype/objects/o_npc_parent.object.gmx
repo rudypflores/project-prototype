@@ -37,6 +37,9 @@ message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 0.5; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
 hold = 0; //if we hold 'Z', the text will render faster
+
+//responses by selection!!!
+response = false;
 </string>
           </argument>
         </arguments>
@@ -72,6 +75,12 @@ if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !is_undefined(dialogu
 
 //if the player is currently talking
 if(talking) {
+
+    //if the dialogue is completed in the current page
+    if(characters &gt;= message_length) {
+        //something
+    }
+
     //Draw the dialogue character by character
     if (characters &lt; message_length) {
         hold = keyboard_check(ord('Z'));
@@ -80,6 +89,7 @@ if(talking) {
     }
     //if 'Z' is pressed and we have finished the dialogue for the current page
     if(o_player.interact &amp;&amp; characters &gt;= message_length){ 
+        instance_destroy(o_dialoguePointer);
         index++; 
         characters = 0;
         message_draw = ""; 
@@ -122,13 +132,14 @@ if(talking) {
 draw_set_colour(c_white);
 draw_set_font(f_lato);
 draw_set_halign(fa_left);
-display_set_gui_size(display_get_width(), display_get_height());
+display_set_gui_size(view_wport[0], view_hport[0]);
 
 //Prevent player from moving while in dialogue
 if(talking) {
-    draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
-    draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
-    draw_text_transformed(120, view_hport[0]+125, message_draw, 0.6, 0.6, 0);   
+    draw_sprite_ext(s_dialogueBox, 0, 15, view_hport[0]-200, 9.7, 6, 0, c_black, 0.9);
+    if(characters &gt;= message_length) draw_sprite_ext(s_dialoguePointer, image_index, view_wport[0]-70, view_hport[0]-50, 2, 2, 0, c_white, 1);
+    draw_text_transformed(35, view_hport[0]-190, name, 0.7, 0.7, 0);
+    draw_text_ext_transformed(35, view_hport[0]-150, message_draw, 50, display_get_gui_width()*1.7, 0.5, 0.5, 0);    
 }
 </string>
           </argument>
