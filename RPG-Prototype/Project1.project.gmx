@@ -6,9 +6,7 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_collision</sprite>
-    <sprite>sprites\s_mask</sprite>
-    <sprite>sprites\s_interactive</sprite>
+    <sprite>sprites\s_enemy</sprite>
     <sprite>sprites\s_elder</sprite>
     <sprites name="player">
       <sprite>sprites\s_player_up</sprite>
@@ -16,16 +14,29 @@
       <sprite>sprites\s_player_right</sprite>
       <sprite>sprites\s_player_left</sprite>
     </sprites>
-    <sprite>sprites\s_enemy</sprite>
-    <sprite>sprites\s_generic</sprite>
-    <sprite>sprites\s_dialogueBox</sprite>
-    <sprite>sprites\s_battleOptionPointer</sprite>
-    <sprite>sprites\s_hpBar</sprite>
-    <sprite>sprites\s_gui_battle_attack</sprite>
-    <sprite>sprites\s_gui_battle_guard</sprite>
-    <sprite>sprites\s_gui_battle_specials</sprite>
-    <sprite>sprites\s_gui_battle_items</sprite>
-    <sprite>sprites\s_gui_battle_run</sprite>
+    <sprites name="GUI">
+      <sprite>sprites\s_hpBar</sprite>
+      <sprite>sprites\s_dialogueBox</sprite>
+      <sprite>sprites\s_battleOptionPointer</sprite>
+      <sprite>sprites\s_gui_battle_items</sprite>
+      <sprite>sprites\s_gui_battle_specials</sprite>
+      <sprite>sprites\s_gui_battle_attack</sprite>
+      <sprite>sprites\s_gui_battle_guard</sprite>
+      <sprite>sprites\s_gui_battle_run</sprite>
+    </sprites>
+    <sprites name="Title_Screen">
+      <sprite>sprites\s_title</sprite>
+      <sprite>sprites\s_exit</sprite>
+      <sprite>sprites\s_start</sprite>
+      <sprite>sprites\s_load</sprite>
+      <sprite>sprites\s_selected</sprite>
+    </sprites>
+    <sprites name="Misc">
+      <sprite>sprites\s_mask</sprite>
+      <sprite>sprites\s_generic</sprite>
+      <sprite>sprites\s_interactive</sprite>
+      <sprite>sprites\s_collision</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\t_house_wall</background>
@@ -46,11 +57,11 @@
     </scripts>
     <scripts name="Helper">
       <script>scripts\m_isColliding.gml</script>
+      <script>scripts\set_tile_depth.gml</script>
     </scripts>
     <scripts name="Engines">
       <script>scripts\m_battleEngine.gml</script>
     </scripts>
-    <script>scripts\set_tile_depth.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_lato</font>
@@ -64,6 +75,7 @@
       <object>objects\o_hpBar_parent</object>
       <object>objects\o_interactive</object>
       <object>objects\o_game</object>
+      <object>objects\o_title_screen</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>
@@ -90,8 +102,16 @@
       <object>objects\o_battle_items</object>
       <object>objects\o_battle_run</object>
     </objects>
+    <objects name="TitleScreen">
+      <object>objects\o_title</object>
+      <object>objects\o_load</object>
+      <object>objects\o_exit</object>
+      <object>objects\o_start</object>
+      <object>objects\o_selection</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\r_titleScreen</room>
     <room>rooms\r_house_dyru</room>
     <room>rooms\r_debugHub</room>
     <room>rooms\r_debugBattle</room>
