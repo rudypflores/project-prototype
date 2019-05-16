@@ -32,10 +32,10 @@ image_speed = .1;
 
 //Dialogue
 name = "Black Smith";
-dialogue[1] = "Hello good morning!";
-dialogue[2] = "Fine day for beta testing";
-dialogue[3] = "Look out for them sneaky bugs!";
-dialogue[4] = "this is the end of the dialogue";
+dialogue[0] = "Hello good morning!";
+dialogue[1] = "Fine day for beta testing";
+dialogue[2] = "Look out for them sneaky bugs!";
+dialogue[3] = "this is the end of the dialogue";
 </string>
           </argument>
         </arguments>

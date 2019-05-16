@@ -27,8 +27,9 @@
             <kind>1</kind>
             <string>///Properties
 event_inherited();
-dialogue[1] = "Hello";
-dialogue[2] = "This is a test";
+dialogue[0] = "Hello";
+dialogue[1] = "You look like a barista standing at the counter like that.";
+dialogue[2] = "-Sojiro Sakura";
 dialogue[3] = "Goodbye";
 
 name = "Merchant";

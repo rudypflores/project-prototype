@@ -28,7 +28,69 @@
             <string>//Properties
 index = 0;
 dialogue = undefined;
-talking = true;
+talking = false;
+message_length = undefined;
+message_draw = ""; //this is what we 'write' out. It's blank right now
+increase = 0.5; //the speed at which new characters are added
+characters = 0; //how many characters have already been drawn
+hold = 0; //if we hold 'Z', the text will render faster
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Dialogue Controller
+//if the player is close to the npc and 'Z' is pressed
+if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !is_undefined(dialogue)) {
+    //it means the player is currently talking
+    o_player.state = m_idle; 
+    message_length = string_length(dialogue[index]);  //get the new character length for message
+    talking = true;
+}
+
+//if the player is currently talking
+if(talking) {
+    //Draw the dialogue character by character
+    if (characters &lt; message_length) {
+        hold = keyboard_check(ord('Z'));
+        characters += increase * (1 + hold);
+        message_draw = string_copy(dialogue[index], 0, characters);
+    }
+    //if 'Z' is pressed and we have finished the dialogue for the current page
+    if(o_player.interact &amp;&amp; characters &gt;= message_length){ 
+        index++; 
+        characters = 0;
+        message_draw = ""; 
+        if(index == array_length_1d(dialogue)) { //Finish talking
+            index = 0;
+            message_length = undefined;
+            o_player.state = m_move;
+            talking = false;
+        } else { //Continue to next part of dialogue
+            message_length = string_length(dialogue[index]);
+        }
+    }
+}
+
+
+
 </string>
           </argument>
         </arguments>
@@ -51,7 +113,7 @@ talking = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//When the room initializes
+            <string>///When the room initializes
 if(room == r_debugBattle) {
     x = o_camera_battle.x;
     y = o_camera_battle.y-40;
@@ -79,11 +141,10 @@ if(room == r_debugBattle) {
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>//Go to next room and make character face enemy
-if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !talking) {
+            <string>///Go to next room and make character face enemy
+if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; talking == false) {
     //update the last room
     o_player.last_room = room;
-    
     room_goto(r_debugBattle);
     o_player.sprite_index = s_player_up;
     o_player.state = m_battle;
@@ -117,30 +178,11 @@ draw_set_font(f_lato);
 draw_set_halign(fa_left);
 
 //Prevent player from moving while in dialogue
-if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player)) {
-    if(o_player.state == m_idle) {
-        //If we're in the idle state the dialogue box is drawn
-        draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
-        draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
-        draw_text_transformed(120, view_hport[0]+125, dialogue[index], 0.6, 0.6, 0);   
-    }
-}
-
-//Check if player is close to npc
-if(o_player.interact &amp;&amp; (place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))) {
-    //If so we display text, and we switch to the next index for each key press
-    //Check if variable instantiated in child
-    if(!(is_undefined(dialogue))) {
-        
-        if(index == array_length_1d(dialogue)-1) {
-            index = 0;
-            o_player.state = m_move;
-            talking = false;
-        } else {
-            o_player.state = m_idle;
-            index++;
-        }
-    }
+if(talking) {
+    //If we're in the idle state the dialogue box is drawn
+    draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
+    draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
+    draw_text_transformed(120, view_hport[0]+125, message_draw, 0.6, 0.6, 0);   
 }
 </string>
           </argument>

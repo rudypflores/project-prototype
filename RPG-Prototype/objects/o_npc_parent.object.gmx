@@ -31,7 +31,12 @@
 //Name of child instance must be defined!
 index = 0;
 dialogue = undefined;
-talking = true;
+talking = false;
+message_length = undefined;
+message_draw = ""; //this is what we 'write' out. It's blank right now
+increase = 0.5; //the speed at which new characters are added
+characters = 0; //how many characters have already been drawn
+hold = 0; //if we hold 'Z', the text will render faster
 </string>
           </argument>
         </arguments>
@@ -54,23 +59,43 @@ talking = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>depth = -y;
+            <string>///Dialogue Controller
+depth = -y;
 
-//Check if player is close to npc
-if(o_player.interact &amp;&amp; (place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player))) {
-    //If so we display text, and we switch to the next index for each key press
-    //Check if variable instantiated in child
-    if(!(is_undefined(dialogue))) {
-        if(index == array_length_1d(dialogue)-1) {
+//if the player is close to the npc and 'Z' is pressed
+if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !is_undefined(dialogue)) {
+    //it means the player is currently talking
+    o_player.state = m_idle; 
+    message_length = string_length(dialogue[index]);  //get the new character length for message
+    talking = true;
+}
+
+//if the player is currently talking
+if(talking) {
+    //Draw the dialogue character by character
+    if (characters &lt; message_length) {
+        hold = keyboard_check(ord('Z'));
+        characters += increase * (1 + hold);
+        message_draw = string_copy(dialogue[index], 0, characters);
+    }
+    //if 'Z' is pressed and we have finished the dialogue for the current page
+    if(o_player.interact &amp;&amp; characters &gt;= message_length){ 
+        index++; 
+        characters = 0;
+        message_draw = ""; 
+        if(index == array_length_1d(dialogue)) { //Finish talking
             index = 0;
+            message_length = undefined;
             o_player.state = m_move;
-            talking = true;
-        } else {
-            o_player.state = m_idle;
-            index++;
+            talking = false;
+        } else { //Continue to next part of dialogue
+            message_length = string_length(dialogue[index]);
         }
     }
 }
+
+
+
 </string>
           </argument>
         </arguments>
@@ -100,12 +125,10 @@ draw_set_halign(fa_left);
 display_set_gui_size(display_get_width(), display_get_height());
 
 //Prevent player from moving while in dialogue
-if(place_meeting(x+5, y, o_player) || place_meeting(x, y-5, o_player) || place_meeting(x-5, y, o_player) || place_meeting(x, y+5, o_player)) {
-    if(o_player.state == m_idle) {
-        draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
-        draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
-        draw_text_transformed(120, view_hport[0]+125, dialogue[index], 0.6, 0.6, 0);   
-    }
+if(talking) {
+    draw_sprite_ext(s_dialogueBox, 0, 70, view_hport[0]+25, 14, 10, 0, c_black, 0.9);
+    draw_text_transformed(120, view_hport[0]+70, name, 0.9, 0.9, 0);
+    draw_text_transformed(120, view_hport[0]+125, message_draw, 0.6, 0.6, 0);   
 }
 </string>
           </argument>
