@@ -34,8 +34,8 @@ set_tile_depth(BED_BOTTOM, -16);
 //Move based on room change
 if(instance_exists(o_start_position)) {
     with(o_start_position) {
-        other.x = x;
-        other.y = y;
+        o_player.x = o_start_position.x;
+        o_player.y = o_start_position.y;
     }
 }
 
