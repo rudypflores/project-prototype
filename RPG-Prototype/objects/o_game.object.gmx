@@ -41,7 +41,7 @@ if(instance_exists(o_start_position)) {
 
 //Creation of the view
 if(!instance_exists(o_camera)) {
-    if(room == r_debugBattle) {
+    if(room == r_battle) {
         instance_create(x+100, y, o_camera);
         o_camera.state = state_battle;
     } else {

@@ -12,7 +12,7 @@
   <showcolour>-1</showcolour>
   <code></code>
   <enableViews>-1</enableViews>
-  <clearViewBackground>0</clearViewBackground>
+  <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>0</isSet>
@@ -52,14 +52,14 @@
   </views>
   <instances>
     <instance objName="o_player" x="256" y="208" name="inst_6030ACEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_start_position" x="128" y="112" name="inst_8A6E8082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_start_position" x="72" y="104" name="inst_8A6E8082" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="112" y="224" name="inst_BE4751DF" locked="0" code="" scaleX="7.0625" scaleY="1.87096774578094" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="400" y="224" name="inst_8B777F50" locked="0" code="" scaleX="7.0625" scaleY="1.87096774578094" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="256" y="32" name="inst_4820B026" locked="0" code="" scaleX="16" scaleY="1.80645155906677" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="16" y="128" name="inst_A0E4F225" locked="0" code="" scaleX="1" scaleY="4.25" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="496" y="128" name="inst_A547D6F8" locked="0" code="" scaleX="1" scaleY="4.25" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="256" y="96" name="inst_001A00A6" locked="0" code="" scaleX="2" scaleY="4.21875" colour="4294967295" rotation="0"/>
-    <instance objName="o_interactive" x="256" y="256" name="inst_576C6986" locked="0" code="///assign a room&#xA;next_room = r_debugHub;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_interactive" x="256" y="256" name="inst_576C6986" locked="0" code="///assign a room&#xA;next_room = r_first_town;&#xA;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_game" x="32" y="176" name="inst_F19C3B5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="128" name="inst_5A38D701" locked="0" code="" scaleX="1.03030300140381" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="96" name="inst_4F45A1ED" locked="0" code="" scaleX="1.09375" scaleY="0.5625" colour="4294967295" rotation="0"/>

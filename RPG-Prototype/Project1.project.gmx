@@ -42,6 +42,10 @@
       <sprite>sprites\s_interactive</sprite>
       <sprite>sprites\s_collision</sprite>
     </sprites>
+    <sprites name="Structures">
+      <sprite>sprites\s_dyrus_house</sprite>
+      <sprite>sprites\s_generic_house</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\t_house_wall</background>
@@ -91,7 +95,6 @@
     <objects name="Characters">
       <object>objects\o_player</object>
       <object>objects\o_npc_elder</object>
-      <object>objects\o_test</object>
       <object>objects\o_npc_1</object>
     </objects>
     <objects name="Enemies">
@@ -115,12 +118,19 @@
       <object>objects\o_start</object>
       <object>objects\o_selection</object>
     </objects>
+    <objects name="Structures">
+      <object>objects\o_dyrus_house</object>
+      <object>objects\o_generic_house</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_titleScreen</room>
     <room>rooms\r_house_dyru</room>
-    <room>rooms\r_debugHub</room>
-    <room>rooms\r_debugBattle</room>
+    <room>rooms\r_first_town</room>
+    <room>rooms\r_battle</room>
+    <rooms name="Debugging">
+      <room>rooms\r_debug</room>
+    </rooms>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
