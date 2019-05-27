@@ -4,6 +4,7 @@ up = keyboard_check(vk_up);
 left = keyboard_check(vk_left);
 down = keyboard_check(vk_down);
 interact = keyboard_check_pressed(ord('Z'));
+cancel = keyboard_check_pressed(ord('X'));
 
 spd = 3;
 hspd = right - left;

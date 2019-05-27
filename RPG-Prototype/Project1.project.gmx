@@ -25,6 +25,7 @@
         <sprite>sprites\s_hpBar</sprite>
       </sprites>
       <sprites name="overworld">
+        <sprite>sprites\s_menu</sprite>
         <sprite>sprites\s_dialogueBox</sprite>
         <sprite>sprites\s_dialoguePointer</sprite>
       </sprites>
@@ -98,15 +99,20 @@
       <object>objects\o_enemy_shark</object>
     </objects>
     <objects name="UI">
-      <object>objects\o_hpBar_player</object>
-      <object>objects\o_hpBar_enemy</object>
-      <object>objects\o_battle_guard</object>
-      <object>objects\o_battle_attack</object>
-      <object>objects\o_battle_pointer</object>
-      <object>objects\o_battle_specials</object>
-      <object>objects\o_battle_items</object>
-      <object>objects\o_battle_run</object>
-      <object>objects\o_dialoguePointer</object>
+      <objects name="battle">
+        <object>objects\o_battle_items</object>
+        <object>objects\o_battle_specials</object>
+        <object>objects\o_hpBar_player</object>
+        <object>objects\o_hpBar_enemy</object>
+        <object>objects\o_battle_guard</object>
+        <object>objects\o_battle_attack</object>
+        <object>objects\o_battle_pointer</object>
+        <object>objects\o_battle_run</object>
+      </objects>
+      <objects name="overworld">
+        <object>objects\o_dialoguePointer</object>
+        <object>objects\o_menu</object>
+      </objects>
     </objects>
     <objects name="TitleScreen">
       <object>objects\o_title</object>
