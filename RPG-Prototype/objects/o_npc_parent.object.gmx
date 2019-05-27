@@ -40,6 +40,7 @@ hold = 0; //if we hold 'Z', the text will render faster
 
 //responses by selection!!!
 response = false;
+responses = undefined;
 </string>
           </argument>
         </arguments>

@@ -6,8 +6,6 @@
   <NewExtensions/>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\s_enemy</sprite>
-    <sprite>sprites\s_elder</sprite>
     <sprites name="player">
       <sprite>sprites\s_player_up</sprite>
       <sprite>sprites\s_player_down</sprite>
@@ -46,6 +44,13 @@
     <sprites name="Structures">
       <sprite>sprites\s_dyrus_house</sprite>
       <sprite>sprites\s_generic_house</sprite>
+    </sprites>
+    <sprites name="NPC's">
+      <sprite>sprites\s_elder</sprite>
+      <sprite>sprites\s_dyrus_mom</sprite>
+    </sprites>
+    <sprites name="Enemies">
+      <sprite>sprites\s_enemy</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -95,8 +100,7 @@
     </objects>
     <objects name="Characters">
       <object>objects\o_player</object>
-      <object>objects\o_npc_elder</object>
-      <object>objects\o_npc_1</object>
+      <object>objects\o_npc_dyrus_mom</object>
     </objects>
     <objects name="Enemies">
       <object>objects\o_enemy_shark</object>
