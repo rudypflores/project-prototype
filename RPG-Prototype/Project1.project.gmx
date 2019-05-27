@@ -57,6 +57,7 @@
     <background>background\t_house_wall</background>
     <background>background\t_house_floor</background>
     <background>background\t_house_props</background>
+    <background>background\background3</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -91,6 +92,7 @@
       <object>objects\o_interactive</object>
       <object>objects\o_game</object>
       <object>objects\o_title_screen</object>
+      <object>objects\o_communication</object>
     </objects>
     <objects name="Helper">
       <object>objects\o_camera</object>

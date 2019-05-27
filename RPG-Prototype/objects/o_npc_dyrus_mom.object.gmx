@@ -29,6 +29,8 @@
 event_inherited();
 image_speed = .08;
 
+offset = 10;
+
 name = "Mom";
 dialogue[0] = "Hey good morning!";
 dialogue[1] = "You should hurry and get ready since tomorrow you will be leaving town.";

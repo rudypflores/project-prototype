@@ -686,7 +686,7 @@
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
   <ConfigConstants>
-    <constants number="10">
+    <constants number="11">
       <constant name="ATTACK">0</constant>
       <constant name="GUARD">1</constant>
       <constant name="SPECIALS">2</constant>
@@ -697,6 +697,7 @@
       <constant name="START">0</constant>
       <constant name="LOAD">1</constant>
       <constant name="EXIT">2</constant>
+      <constant name="FURNITURE">100</constant>
     </constants>
   </ConfigConstants>
 </Config>

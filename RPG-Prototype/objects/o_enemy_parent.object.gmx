@@ -34,6 +34,7 @@ message_draw = ""; //this is what we 'write' out. It's blank right now
 increase = 0.5; //the speed at which new characters are added
 characters = 0; //how many characters have already been drawn
 hold = 0; //if we hold 'Z', the text will render faster
+offset = 5;
 </string>
           </argument>
         </arguments>
@@ -58,7 +59,7 @@ hold = 0; //if we hold 'Z', the text will render faster
             <kind>1</kind>
             <string>///Dialogue Controller
 //if the player is close to the npc and 'Z' is pressed
-if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; !is_undefined(dialogue)) {
+if(o_player.interact &amp;&amp; m_isColliding(offset) &amp;&amp; !is_undefined(dialogue)) {
     //it means the player is currently talking
     o_player.state = m_idle; 
     message_length = string_length(dialogue[index]);  //get the new character length for message
@@ -141,7 +142,7 @@ if(room == r_battle) {
           <argument>
             <kind>1</kind>
             <string>///Go to next room and make character face enemy
-if(o_player.interact &amp;&amp; m_isColliding() &amp;&amp; talking == false) {
+if(o_player.interact &amp;&amp; m_isColliding(offset) &amp;&amp; talking == false) {
     //update the last room
     o_player.last_room = room;
     room_goto(r_battle);

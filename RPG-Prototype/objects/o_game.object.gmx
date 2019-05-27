@@ -30,6 +30,7 @@
 //bed tile depth for house
 set_tile_depth(BED_TOP, -16);
 set_tile_depth(BED_BOTTOM, -16);
+set_tile_depth(FURNITURE, -16);
 
 //Move based on room change
 if(instance_exists(o_start_position)) {

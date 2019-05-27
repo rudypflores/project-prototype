@@ -63,7 +63,10 @@
     <instance objName="o_game" x="32" y="176" name="inst_F19C3B5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="128" name="inst_5A38D701" locked="0" code="" scaleX="1.03030300140381" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="96" name="inst_4F45A1ED" locked="0" code="" scaleX="1.09375" scaleY="0.5625" colour="4294967295" rotation="0"/>
-    <instance objName="o_npc_dyrus_mom" x="376" y="96" name="inst_66C28618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_npc_dyrus_mom" x="328" y="96" name="inst_66C28618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_collision" x="328" y="112" name="inst_97E285A2" locked="0" code="" scaleX="1.93548381328583" scaleY="0.5" colour="4294967295" rotation="0"/>
+    <instance objName="o_communication" x="384" y="56" name="inst_B13606E3" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;It's your fridge, it looks good as new!&quot;;&#xA;dialogue[1] = &quot;It would be nice if it actually had something to eat inside though.&quot;; &#xA;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_communication" x="176" y="48" name="inst_9AF10076" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;You look out the window and space out with the thought about moving out of town soon.&quot;;&#xA;dialogue[1] = &quot;Maybe you should start packing.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="t_house_wall" x="32" y="32" w="32" h="32" xo="0" yo="32" id="10000354" name="inst_53DCBF97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -140,6 +143,13 @@
     <tile bgName="t_house_props" x="48" y="80" w="48" h="30" xo="32" yo="0" id="10000490" name="inst_156F9D78" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_props" x="48" y="102" w="48" h="32" xo="32" yo="32" id="10000492" name="inst_26B75710" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_props" x="240" y="224" w="32" h="32" xo="0" yo="0" id="10000493" name="inst_0273CEBF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="328" y="32" w="32" h="32" xo="64" yo="0" id="10000500" name="inst_2A186BB2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="408" y="32" w="32" h="32" xo="64" yo="0" id="10000501" name="inst_F5B041E6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="160" y="32" w="32" h="32" xo="64" yo="0" id="10000502" name="inst_2F75DABD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="64" y="32" w="32" h="32" xo="64" yo="0" id="10000503" name="inst_8E7A7D8D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="368" y="40" w="32" h="32" xo="0" yo="0" id="10000504" name="inst_412843A8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="296" y="88" w="32" h="32" xo="32" yo="0" id="10000506" name="inst_3CDCC871" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="background3" x="328" y="88" w="32" h="32" xo="32" yo="0" id="10000507" name="inst_EC60EAC8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000389" name="inst_281FCB1E" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="32" w="32" h="32" xo="0" yo="0" id="10000390" name="inst_96ECEEEF" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="64" w="32" h="32" xo="0" yo="0" id="10000391" name="inst_1579E257" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

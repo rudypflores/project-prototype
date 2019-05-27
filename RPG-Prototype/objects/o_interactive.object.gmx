@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>///Properties
 next_room = undefined;
+offset = 5;
 </string>
           </argument>
         </arguments>
@@ -49,7 +50,7 @@ next_room = undefined;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(m_isColliding()) {
+            <string>if(m_isColliding(offset)) {
     o_player.last_room = room;
     room_goto(next_room);
 }
