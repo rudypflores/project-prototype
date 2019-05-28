@@ -57,7 +57,7 @@
     <background>background\t_house_wall</background>
     <background>background\t_house_floor</background>
     <background>background\t_house_props</background>
-    <background>background\background3</background>
+    <background>background\t_dyrus_house</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">

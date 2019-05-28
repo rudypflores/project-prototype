@@ -3,8 +3,8 @@
   <caption></caption>
   <width>512</width>
   <height>256</height>
-  <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <vsnap>1</vsnap>
+  <hsnap>1</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -60,13 +60,15 @@
     <instance objName="o_collision" x="496" y="128" name="inst_A547D6F8" locked="0" code="" scaleX="1" scaleY="4.25" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="256" y="96" name="inst_001A00A6" locked="0" code="" scaleX="2" scaleY="4.21875" colour="4294967295" rotation="0"/>
     <instance objName="o_interactive" x="256" y="256" name="inst_576C6986" locked="0" code="///assign a room&#xA;next_room = r_titleScreen;" scaleX="2" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_game" x="32" y="176" name="inst_F19C3B5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_game" x="40" y="16" name="inst_F19C3B5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="128" name="inst_5A38D701" locked="0" code="" scaleX="1.03030300140381" scaleY="0.625" colour="4294967295" rotation="0"/>
     <instance objName="o_collision" x="72" y="96" name="inst_4F45A1ED" locked="0" code="" scaleX="1.09375" scaleY="0.5625" colour="4294967295" rotation="0"/>
-    <instance objName="o_npc_dyrus_mom" x="328" y="96" name="inst_66C28618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_collision" x="328" y="112" name="inst_97E285A2" locked="0" code="" scaleX="1.93548381328583" scaleY="0.5" colour="4294967295" rotation="0"/>
-    <instance objName="o_communication" x="384" y="56" name="inst_B13606E3" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;It's your fridge, it looks good as new!&quot;;&#xA;dialogue[1] = &quot;It would be nice if it actually had something to eat inside though.&quot;; &#xA;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
-    <instance objName="o_communication" x="176" y="48" name="inst_9AF10076" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;You look out the window and space out with the thought about moving out of town soon.&quot;;&#xA;dialogue[1] = &quot;Maybe you should start packing.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_npc_dyrus_mom" x="320" y="80" name="inst_66C28618" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_communication" x="387" y="65" name="inst_B13606E3" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;It's your fridge, it looks good as new!&quot;;&#xA;dialogue[1] = &quot;It would be nice if it actually had something to eat inside though.&quot;;" scaleX="0.75" scaleY="0.75" colour="4294967295" rotation="0"/>
+    <instance objName="o_collision" x="384" y="144" name="inst_27A8C28A" locked="0" code="" scaleX="3.09677410125732" scaleY="0.625" colour="4294967295" rotation="0"/>
+    <instance objName="o_collision" x="411" y="61" name="inst_E3D33936" locked="0" code="" scaleX="3.71875" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_communication" x="169" y="65" name="inst_51F7EC42" locked="0" code="///Properties&#xA;event_inherited();&#xA;dialogue[0] = &quot;It seems like the show playing on the TV is touring the place you will visit soon.&quot;;&#xA;dialogue[1] = &quot;You decide to stop watching to prevent losing interest.&quot;;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_collision" x="146" y="64" name="inst_D4479537" locked="0" code="" scaleX="2.83870959281921" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="t_house_wall" x="32" y="32" w="32" h="32" xo="0" yo="32" id="10000354" name="inst_53DCBF97" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -141,15 +143,65 @@
     <tile bgName="t_house_wall" x="224" y="128" w="32" h="32" xo="0" yo="32" id="10000477" name="inst_D5B1BF9C" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="256" y="128" w="32" h="32" xo="0" yo="32" id="10000478" name="inst_F3E31DB1" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_props" x="48" y="80" w="48" h="30" xo="32" yo="0" id="10000490" name="inst_156F9D78" depth="100000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="t_house_props" x="48" y="102" w="48" h="32" xo="32" yo="32" id="10000492" name="inst_26B75710" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_house_props" x="48" y="101" w="48" h="32" xo="32" yo="32" id="10000492" name="inst_26B75710" depth="10000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_props" x="240" y="224" w="32" h="32" xo="0" yo="0" id="10000493" name="inst_0273CEBF" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="328" y="32" w="32" h="32" xo="64" yo="0" id="10000500" name="inst_2A186BB2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="408" y="32" w="32" h="32" xo="64" yo="0" id="10000501" name="inst_F5B041E6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="160" y="32" w="32" h="32" xo="64" yo="0" id="10000502" name="inst_2F75DABD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="64" y="32" w="32" h="32" xo="64" yo="0" id="10000503" name="inst_8E7A7D8D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="368" y="40" w="32" h="32" xo="0" yo="0" id="10000504" name="inst_412843A8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="296" y="88" w="32" h="32" xo="32" yo="0" id="10000506" name="inst_3CDCC871" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
-    <tile bgName="background3" x="328" y="88" w="32" h="32" xo="32" yo="0" id="10000507" name="inst_EC60EAC8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="328" y="32" w="32" h="32" xo="64" yo="0" id="10000500" name="inst_2A186BB2" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="408" y="32" w="32" h="32" xo="64" yo="0" id="10000501" name="inst_F5B041E6" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="160" y="32" w="32" h="32" xo="64" yo="0" id="10000502" name="inst_2F75DABD" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="64" y="32" w="32" h="32" xo="64" yo="0" id="10000503" name="inst_8E7A7D8D" depth="1000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="379" y="48" w="32" h="32" xo="0" yo="0" id="10000504" name="inst_412843A8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="350" y="48" w="32" h="32" xo="96" yo="0" id="10000508" name="inst_50870D26" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="352" y="132" w="64" h="32" xo="160" yo="0" id="10000509" name="inst_0DAF95B2" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="336" y="128" w="16" h="32" xo="224" yo="0" id="10000510" name="inst_A90D7840" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="416" y="128" w="16" h="32" xo="240" yo="0" id="10000511" name="inst_A858FE79" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="112" y="48" w="32" h="32" xo="352" yo="0" id="10000534" name="inst_D36C18A7" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="96" y="64" w="16" h="16" xo="336" yo="0" id="10000535" name="inst_468A001D" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="144" y="64" w="16" h="16" xo="336" yo="0" id="10000536" name="inst_3B17204B" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="408" y="48" w="64" h="32" xo="384" yo="0" id="10000543" name="inst_86F988A8" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="408" y="24" w="64" h="32" xo="448" yo="0" id="10000544" name="inst_A9EC76A3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="453" y="51" w="16" h="16" xo="320" yo="16" id="10000545" name="inst_3A354FE3" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="376" y="136" w="16" h="16" xo="320" yo="16" id="10000547" name="inst_8714FB01" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="368" y="96" w="32" h="32" xo="32" yo="0" id="10000554" name="inst_65A58614" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="368" y="100" w="16" h="16" xo="336" yo="0" id="10000558" name="inst_4EB90F1D" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="384" y="100" w="16" h="16" xo="336" yo="16" id="10000563" name="inst_97BA8D31" depth="100" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="160" y="48" w="32" h="32" xo="32" yo="0" id="10000552" name="inst_9222793B" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="160" y="37" w="32" h="32" xo="128" yo="0" id="10000553" name="inst_506DFEA3" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="88" w="16" h="16" xo="256" yo="0" id="10000564" name="inst_7C1A9876" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="88" w="16" h="16" xo="288" yo="0" id="10000565" name="inst_984F3E9C" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="88" w="16" h="16" xo="288" yo="0" id="10000566" name="inst_FC81DCD6" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="88" w="16" h="16" xo="288" yo="0" id="10000567" name="inst_D6764CB0" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="88" w="16" h="16" xo="288" yo="0" id="10000568" name="inst_072B473F" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="88" w="16" h="16" xo="272" yo="0" id="10000569" name="inst_647F7C36" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="104" w="16" h="16" xo="320" yo="0" id="10000570" name="inst_EE012146" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="104" w="16" h="16" xo="320" yo="0" id="10000571" name="inst_A01E5F0A" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="104" w="16" h="16" xo="320" yo="0" id="10000572" name="inst_AF152BA5" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="104" w="16" h="16" xo="320" yo="0" id="10000573" name="inst_72D1A06D" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="120" w="16" h="16" xo="320" yo="0" id="10000574" name="inst_94A011BB" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="120" w="16" h="16" xo="320" yo="0" id="10000575" name="inst_8D0811FE" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="120" w="16" h="16" xo="320" yo="0" id="10000576" name="inst_93645119" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="120" w="16" h="16" xo="320" yo="0" id="10000577" name="inst_80EB0FD8" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="136" w="16" h="16" xo="320" yo="0" id="10000578" name="inst_F60D4A65" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="136" w="16" h="16" xo="320" yo="0" id="10000579" name="inst_9DB14711" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="136" w="16" h="16" xo="320" yo="0" id="10000580" name="inst_BB83C7FD" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="136" w="16" h="16" xo="320" yo="0" id="10000581" name="inst_0A8DF275" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="104" w="16" h="16" xo="256" yo="8" id="10000582" name="inst_87E9289E" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="120" w="16" h="16" xo="256" yo="8" id="10000583" name="inst_A6E645E7" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="136" w="16" h="16" xo="256" yo="8" id="10000584" name="inst_F955269C" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="104" w="16" h="16" xo="272" yo="8" id="10000585" name="inst_39DEFCF5" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="120" w="16" h="16" xo="272" yo="8" id="10000586" name="inst_B9DD3C33" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="136" w="16" h="16" xo="272" yo="8" id="10000587" name="inst_7F15EBC0" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="152" w="16" h="16" xo="272" yo="8" id="10000588" name="inst_BFED5EE2" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="152" w="16" h="16" xo="256" yo="8" id="10000589" name="inst_B9863164" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="152" w="16" h="16" xo="320" yo="0" id="10000590" name="inst_D19E91BA" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="152" w="16" h="16" xo="320" yo="0" id="10000591" name="inst_A213817C" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="152" w="16" h="16" xo="320" yo="0" id="10000592" name="inst_0B790962" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="152" w="16" h="16" xo="320" yo="0" id="10000593" name="inst_D2715399" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="184" y="168" w="16" h="16" xo="272" yo="16" id="10000594" name="inst_8DF1AD00" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="104" y="168" w="16" h="16" xo="256" yo="16" id="10000595" name="inst_3522B90F" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="120" y="168" w="16" h="16" xo="288" yo="16" id="10000596" name="inst_E5170BDE" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="136" y="168" w="16" h="16" xo="288" yo="16" id="10000597" name="inst_14585D44" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="152" y="168" w="16" h="16" xo="288" yo="16" id="10000598" name="inst_D0CF1E47" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="t_dyrus_house" x="168" y="168" w="16" h="16" xo="288" yo="16" id="10000599" name="inst_83645876" depth="10" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10000389" name="inst_281FCB1E" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="32" w="32" h="32" xo="0" yo="0" id="10000390" name="inst_96ECEEEF" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="t_house_wall" x="0" y="64" w="32" h="32" xo="0" yo="0" id="10000391" name="inst_1579E257" depth="-1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
