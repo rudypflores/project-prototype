@@ -139,6 +139,7 @@
     <room>rooms\r_titleScreen</room>
     <room>rooms\r_house_dyru</room>
     <room>rooms\r_battle</room>
+    <room>rooms\r_first_town</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

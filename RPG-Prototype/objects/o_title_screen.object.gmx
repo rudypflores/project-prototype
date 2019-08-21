@@ -66,6 +66,7 @@ select = keyboard_check(ord('Z'));
 if(select) {
     switch(selected) {
         case START:
+            //will soon be replaced for current room in save state
             room_goto(r_house_dyru);
             break;
         case LOAD:
