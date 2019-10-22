@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="o_dyrus_house" x="480" y="320" name="inst_8386DDB1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="o_start_position" x="128" y="96" name="inst_A0F0AAFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_start_position" x="480" y="416" name="inst_A0F0AAFB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="o_interactive" x="1024" y="256" name="inst_28FC5A00" locked="0" code="" scaleX="1.80645155906677" scaleY="4.90322589874268" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
