@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>o_collision</parentName>
-  <maskName>s_dyrus_house</maskName>
+  <maskName>m_dyrus_house</maskName>
   <events/>
   <PhysicsObject>0</PhysicsObject>
   <PhysicsObjectSensor>0</PhysicsObjectSensor>

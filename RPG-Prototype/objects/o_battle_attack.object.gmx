@@ -29,6 +29,39 @@
 image_xscale = 0.7;
 image_yscale = 0.7;
 image_speed = 0;
+
+//state for player decision
+selected = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="2">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>//check if active
+if(selected &amp;&amp; instance_exists(o_battle_attack)) {
+    instance_create(view_wview[0]+14, o_battle_attack.y-8, o_selection_box);
+} else {
+    if(instance_exists(o_selection_box)) {
+        instance_destroy(o_selection_box);
+    }
+}
 </string>
           </argument>
         </arguments>

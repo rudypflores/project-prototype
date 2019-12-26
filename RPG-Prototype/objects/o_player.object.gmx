@@ -65,6 +65,7 @@ menu_left = undefined;
             <string>//Basic Physics
 script_execute(state);
 
+//set 2.5D depth
 depth = -y;
 
 if(down) {

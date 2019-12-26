@@ -34,7 +34,7 @@ battleOptions[3] = "Items";
 battleOptions[4] = "Run";
 
 //Position of each option at X
-battleOptionPositionX= view_wview[0]/6;
+battleOptionPositionX= view_wview[0]/2;
 
 //Position of each option at Y
 battleOptionPositionsY[0] = view_hview[0]/3;
@@ -74,14 +74,16 @@ current = defaultOption;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Main battle system
+            <string>///Main battle system and UI Settings
 m_battleEngine();
 
 ///Create UI
+//Create HP Bar
 if(!instance_exists(o_hpBar_player) &amp;&amp; instance_exists(o_player)) {
     instance_create(0, 0, o_hpBar_player);
 }
 
+//Create battle pointer
 if(!instance_exists(o_battle_pointer)) {
     instance_create(xx, yy, o_battle_pointer);
 } else {
@@ -89,22 +91,27 @@ if(!instance_exists(o_battle_pointer)) {
     o_battle_pointer.y = yy;
 }
 
+//Attack UI
 if(!instance_exists(o_battle_attack)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[0], o_battle_attack);
 }
 
+//Guard UI
 if(!instance_exists(o_battle_guard)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[1], o_battle_guard);
 }
 
+//Specials UI
 if(!instance_exists(o_battle_specials)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[2], o_battle_specials);
 }
 
+//Items UI
 if(!instance_exists(o_battle_items)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[3], o_battle_items);
 }
 
+//Run UI
 if(!instance_exists(o_battle_run)) {
     instance_create(battleOptionPositionX, battleOptionPositionsY[4], o_battle_run);
 }

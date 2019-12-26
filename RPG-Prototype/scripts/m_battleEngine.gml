@@ -1,9 +1,9 @@
 ///m_battleEngine();
 //if option is selected what should be done?
-
 if(o_player.interact) {
     //Attack the enemy
     if(current == ATTACK) {
+        o_battle_attack.selected = true;
         o_battle_attack.image_speed = .8;
         o_hpBar_enemy.state = state_damaged;
         o_hpBar_enemy.in = irandom(50); //this is temporary

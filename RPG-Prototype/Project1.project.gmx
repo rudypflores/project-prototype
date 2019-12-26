@@ -21,6 +21,7 @@
         <sprite>sprites\s_gui_battle_attack</sprite>
         <sprite>sprites\s_gui_battle_run</sprite>
         <sprite>sprites\s_hpBar</sprite>
+        <sprite>sprites\s_gui_battle_selection_box</sprite>
       </sprites>
       <sprites name="overworld">
         <sprite>sprites\s_menu</sprite>
@@ -48,9 +49,15 @@
     <sprites name="NPC's">
       <sprite>sprites\s_elder</sprite>
       <sprite>sprites\s_dyrus_mom</sprite>
+      <sprite>sprites\s_villagerOne</sprite>
     </sprites>
     <sprites name="Enemies">
       <sprite>sprites\s_enemy</sprite>
+      <sprite>sprites\s_test</sprite>
+    </sprites>
+    <sprites name="Masks">
+      <sprite>sprites\m_dyrus_house</sprite>
+      <sprite>sprites\m_generic_house</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -58,6 +65,8 @@
     <background>background\t_house_floor</background>
     <background>background\t_house_props</background>
     <background>background\t_dyrus_house</background>
+    <background>background\t_grass</background>
+    <background>background\t_firstTown</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
@@ -103,9 +112,11 @@
     <objects name="Characters">
       <object>objects\o_player</object>
       <object>objects\o_npc_dyrus_mom</object>
+      <object>objects\o_villagerOne</object>
     </objects>
     <objects name="Enemies">
       <object>objects\o_enemy_shark</object>
+      <object>objects\o_test</object>
     </objects>
     <objects name="UI">
       <objects name="battle">
@@ -117,6 +128,9 @@
         <object>objects\o_battle_attack</object>
         <object>objects\o_battle_pointer</object>
         <object>objects\o_battle_run</object>
+        <objects name="Attack Options">
+          <object>objects\o_selection_box</object>
+        </objects>
       </objects>
       <objects name="overworld">
         <object>objects\o_dialoguePointer</object>
